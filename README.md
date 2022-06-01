@@ -18,4 +18,6 @@ NOTES:****
 #) Once the page loads user can see three buttons show table , show form and show card .
 #) If user clicks showTable button then Part -3 table functions will show and respectively same for other 2 buttons as well.
 
+*** Please open the Intercation - 1,2,3,4 pics to check how the applciation will be. ****
+
 Thanks For reading.
