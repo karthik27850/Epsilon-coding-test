@@ -1,0 +1,81 @@
+<h1>Code Challenge Test - (Epsilon)</h1>
+<p>NOTE:- Please click the below buttons to see the results</p>
+<br>
+<br>
+<button class="btn-show" (click)="showCardContent()">Show Card </button> &nbsp; &nbsp;
+<button class="btn-show" (click)="showFormContent()">Show Form</button> &nbsp; &nbsp;
+<button class="btn-show" (click)="showTableContent()">Show Table</button> &nbsp; &nbsp;
+<br>
+<br>
+
+<div *ngIf="showCard">
+  <h1>PART 1 - Card Component</h1>
+  <p-card [style]="{width: '290px'}" styleClass="p-card-shadow">
+    <ng-template pTemplate="header">
+      <img style="width: 290px;height: 290px;" alt="Card" src="assets/images/dog-ep.jpg">
+    </ng-template>
+    <div style="    font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f5ef0;margin-top: -18px">Beach Day</div>
+    <br>
+    <div style="    font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #7A8594;margin-top: -8px;">RUFUS THE DOG</div>
+    <br>
+    <div style="font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: #7A8594;margin-top: -8px;">Modified 02/28/2019 by bfrost</div>
+    <br>
+  </p-card>
+</div>
+
+<div *ngIf="showForm">
+  <h1>PART 2 - Form Elements</h1>
+
+  <div class="formEle">Name</div>
+  <input type="text" placeholder="Enter Name" pInputText [(ngModel)]="name">
+
+  <div class="formEle">Email</div>
+  <input type="text" placeholder="Enter Email" pInputText [(ngModel)]="email">
+
+  <div class="formEle">Phone Number</div>
+  <input type="text" placeholder="Enter Phone Number" pInputText [(ngModel)]="phoneNumber">
+
+  <div class="formEle">Password</div>
+  <input type="text" placeholder="Enter Password" pInputText [(ngModel)]="password">
+
+  <div class="formEle">Confirm Password</div>
+  <input type="text" placeholder="Confirm Password " pInputText [(ngModel)]="confirmPassword">
+
+  <div class="formEle"></div>
+  <button class="btn">Save</button>
+</div>
+
+<div *ngIf="showTable">
+  <h1>PART 3 - Table Functions</h1>
+
+  <div class="card">
+    <p-table [value]="products1" styleClass="p-datatable-striped">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon>
+          </th>
+          <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon>
+          </th>
+          <th pSortableColumn="category">Category <p-sortIcon field="category"></p-sortIcon>
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-product>
+        <tr>
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.category}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>
