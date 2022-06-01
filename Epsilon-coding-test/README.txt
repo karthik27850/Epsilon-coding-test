@@ -1,27 +1,21 @@
-# Epsilon
+I have done the coding test in Angular 11 version.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.15.
+PREREQUESITES:
 
-## Development server
+Node Version: 14.17.3
+Angular CLI: 11.2.19
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Below are the steps needs to follow to run the project:
 
-## Code scaffolding
+1) Download or clone the project.
+2) Open node js command prompt.
+3) Run npm install in the directory of \Epsilon-coding-test.
+4) Run ng serve command.
+5) open http://localhost:4200/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+NOTES:****
+#) Once the page loads user can see three buttons show table , show form and show card .
+#) If user clicks showTable button then Part -3 table functions will show and respectively same for other 2 buttons as well.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Thanks For reading.
